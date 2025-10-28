@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Data Diri</title>
+</head>
+<body>
+    <h2>Formulir Data Diri</h2>
+    <form action="proses.php" method="POST">
+        <label>Nama:</label><br>
+        <input type="text" name="nama" required><br><br>
+
+        <label>Alamat:</label><br>
+        <textarea name="alamat" required></textarea><br><br>
+
+        <label>Tanggal Lahir:</label><br>
+        <input type="date" name="tanggal_lahir" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan<br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
